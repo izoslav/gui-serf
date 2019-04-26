@@ -13,4 +13,12 @@ public class Samochod extends Przedmiot {
     public Samochod(String nazwa, int dlugosc, int szerokosc, int wysokosc, int pojemnoscSilnika, String rodzajPaliwa) {
         this(nazwa, dlugosc * szerokosc * wysokosc, pojemnoscSilnika, rodzajPaliwa);
     }
+
+    @Override
+    public String toString() {
+        return "Samochod{" +
+                "pojemnoscSilnika=" + pojemnoscSilnika +
+                ", rodzajPaliwa='" + rodzajPaliwa + '\'' +
+                '}';
+    }
 }

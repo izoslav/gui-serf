@@ -19,4 +19,14 @@ public class Rower extends Przedmiot {
     public boolean czyAmortyzowany() {
         return liczbaAmortyzatorow > 0;
     }
+
+    @Override
+    public String toString() {
+        return "Rower{" +
+                "liczbaPrzerzutek=" + liczbaPrzerzutek +
+                ", typHamulcow='" + typHamulcow + '\'' +
+                ", liczbaAmortyzatorow=" + liczbaAmortyzatorow +
+                ", czyAmortyzowany=" + czyAmortyzowany() +
+                '}';
+    }
 }
